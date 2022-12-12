@@ -10,6 +10,10 @@ var correctAnswer = 4;
       var result = "You got it right! Good job!";
     } else {
      var result = "Sorry, that's not the correct answer. The correct answer is " + correctAnswer;
+      
+       // Reset the input field
+    document.getElementById("userAnswer").value = "";
+      
     }
       document.getElementById("result").innerHTML = result;
   }
